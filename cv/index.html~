@@ -9,7 +9,6 @@ title: CV
 	  {% for post in site.cv.posts %}
 	    <li>  {{ post.title }} </li>
 
-	    <li>  {{ post.content }} </li>
+	    <li>  {{ post.content | markdownify }} </li>
 	  {% endfor %}
 	</ul>
-
