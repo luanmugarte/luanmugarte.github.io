@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Blog
+title: CV
 ---
+
 	<h1>{{ page.title }}</h1>
 	<ul class="posts">
 
@@ -11,3 +12,4 @@ title: Blog
 	    <li>  {{ post.content | markdownify }} </li>
 	  {% endfor %}
 	</ul>
+
