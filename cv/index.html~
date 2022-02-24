@@ -4,11 +4,10 @@ title: CV
 ---
 
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+	
+	<li><a href="./Luan_Mugarte_CV.pdf" target="_blank">
+	   <p>CV can be found here.</p>
+	</a></li>
+	
+	<embed src="https://luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf" width="100%" height="850px"/>
 
-	  {% for post in site.cv.posts %}
-	    <li>  {{ post.title }} </li>
-
-	    <li>  {{ post.content | markdownify }} </li>
-	  {% endfor %}
-	</ul>
