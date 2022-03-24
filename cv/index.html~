@@ -3,10 +3,13 @@ layout: default
 title: CV
 ---
 
+<head>	
 	CV can be found here.
+</head>
 
-	
+<body>
+
 	<embed src="https://docs.google.com/viewer?url=${https://luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf}" width="500" height="375" 
- type="application/pdf">
+	 type="application/pdf">
 
-
+</body>
