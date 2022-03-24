@@ -1,1 +1,7 @@
-_site
+_site/
+estrutura.md
+estrutura.md.backup
+README.md.backup
+.gitignore~
+_config.yml~
+index.html~
