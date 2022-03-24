@@ -7,11 +7,7 @@ title: CV
 	
 		CV can be found here.
 
-	<body>
+	
+	<a href="luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf" target="_blank">PDF.</a>
 
-	</body>
-
-	<script type="text/javascript">
-		document.location = "luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf"
-	</script>
 
