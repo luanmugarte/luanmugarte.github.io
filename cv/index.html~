@@ -6,7 +6,7 @@ title: CV
 	CV can be found here.
 
 	
-	<embed src="https://luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf" width="500" height="375" 
+	<embed src="https://docs.google.com/viewer?url=${https://luanmugarte.github.io/cv/Luan_Mugarte_CV.pdf}" width="500" height="375" 
  type="application/pdf">
 
 
