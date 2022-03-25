@@ -19,17 +19,17 @@ repository               : luanmugarte/luanmugarte.github.io # GitHub username/r
 # teaser                   : /assets/images/default-header.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments:
-  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+# comments:
+#  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+#  disqus:
+#    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+#  discourse:
+#    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+#  facebook:
+#    # https://developers.facebook.com/docs/plugins/comments
+#    appid                :
+#    num_posts            : # 5 (default)
+#    colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -93,7 +93,7 @@ social:
 author:
   name             : "Luan Mugarte"
   avatar           : /assets/images/bio-photo.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Econ PhD student at Unicamp, data and cats enthusiast."
+  bio              : "Econ PhD student at Unicamp, data and cat (the animal) enthusiast."
   location         : "Campinas - Brazil"
   email            : luanlimamugarte@gmail.com
   uri              : 
