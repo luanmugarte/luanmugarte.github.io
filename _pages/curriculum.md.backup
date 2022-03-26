@@ -5,22 +5,10 @@ sitemap: false
 permalink: /Curriculum/
 author_profile: TRUE
 header:
-  image: assets/images/banner.jpeg
+  image: assets/images/banner.jpg
 ---
-.container {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.item {
-    width: 10em;
-}
     
-<div class="container">
-    
-<embed src="https://luanmugarte.github.io/assets/download/Luan_Mugarte_CV.pdf" width="500" height="700" 
+    <embed src="https://luanmugarte.github.io/assets/download/Luan_Mugarte_CV.pdf" width="500" height="700" 
 	 type="application/pdf">
 	 
-    </div>
