@@ -1,5 +1,5 @@
 ---
-title:  "Projects"
+title:  "Projetos"
 layout: archive
 permalink: /projects/
 author_profile: true
@@ -8,7 +8,7 @@ header:
   image: assets/images/banner.jpg
 ---
 
-These are finished or ongoing projects that I have worked on (solo or in collaboration with others).
+Estes são projetos finalizandos ou em andamento em que trabalhei (sozinho ou de forma colaborativa).
 
 
 <ul>
