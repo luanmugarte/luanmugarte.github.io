@@ -20,15 +20,33 @@ Todas as partes de extração, tratamento, análise e visualização dos dados f
 
 # Resumo
 
-A análise textual proporcionou primeiras conclusões interessantes as atas do COPOM. A nuvem de palavras da última reunião indicam a preocupação com risco, . A análise de sentimento mostra uma predominância do tom mais negativo em relação ao positivo das atas do Copom, além de um aumento da incerteza após o início do governo Temer. Por fim, a modelagem de tópicos transmite a existência de governos que rompem ou apresentam continuidades em sua política econômica, além de trazer presidências do BCB que dão maior importância sobre temas distintos.
+A análise textual proporcionou primeiras conclusões interessantes as atas do COPOM. A nuvem de palavras da última reunião indicam a preocupação com risco, petróleo e a meta do regime de inflação. A análise de sentimento mostra uma predominância do tom mais negativo em relação ao positivo das atas do Copom, além de um aumento da incerteza após o início do governo Temer. Por fim, a modelagem de tópicos transmite a existência de governos que rompem ou apresentam continuidades em sua política econômica, além de trazer presidências do BCB que dão maior importância sobre temas distintos.
 
 # Visualização dos dados
+
+## Número de palavras, páginas e frequência
+
+As 204 atas analisadas apresentam mais de 1 milhão de palavras no total. Os gráficos a seguir mostram o número de palavras e páginas por atas, o que indica modos diferentes de comunicações do Banco Central Brasileiro durante os anos 2000.
+
+*Palavras por ata por presidente do Banco Central*
+![Palavras por ata por presidente do Banco Central]({{ "/assets/images/copom_text_analysis/Words_per_minute_BCBpres.png" }})
+
+*Páginas por ata por presidente do Banco Central*
+![Páginas por ata por presidente do Banco Central]({{ "/assets/images/copom_text_analysis/Pages_per_minute_BCBpres.png" }})
+
+Por fim, temos as principais palavras utilizadas por cada presidente do BCB. Nesta etapa, foram utilizadas um conjunto de cerca de 400 stopwords (explicadas no próximo tópico). 
+
+*Frequência de palavra por presidente do Banco Central* 
+![Frequência de palavra por presidente do Banco Central]({{ "/assets/images/copom_text_analysis/Word_freq_BCBpres.png" }})
+
 
 ## Nuvem de palavras
 
 Nuvem de palavras são uma forma de análise textual que trazem as palavras mais frequentes utilizadas em conjunto de 1 ou mais textos. Dessa forma, é possível verificar a importância de determinada palavras para esse texto. Adotou-se a convenção de mostrar palavras mais frequentes em tamanhos maiores. 
 
 A nuvem de palavras da última reunião do Copom de março de 2022 encontra-se abaixo. Neste processo de extração da nuvem de palavras, a etapa de remoção das stopwords é essencial. Stopwords correspondem à um conjunto de palavras comuns em textos de uma determinada língua que não acrescentam informação relevante. Alguns artigos, preposições e verbos são usualmente retirados. A depender da experiência e objetivo da nuvem de palavras, stopwords customizadas podem ser adicionadas à esta lista.
+
+*Nuvens de palavras*
 
 ![Nuvens de palavras]({{ "/assets/images/copom_text_analysis/wordcloud_custom_stopwords.png" }})
 
@@ -47,7 +65,7 @@ Geralmente, a análise de sentimento é feita com o uso de um dicionário de sen
 Nesta pesquisa, foi utilizado o dicionário econômico de Loughran-McDonald. Nele, observamos 6 sentimentos possíveis: incerteza, litigioso, negativo, positivo, restritivo ou supérfluo. A tabela abaixo traz alguns exemplos:
 
 
-| <p align='center'>  Sentimento  </p>  | <p align='center'> Palavras </p>   |
+|  Sentimento |  Palavras  |
 |:------:|:------:|
 | Negativo   | Acidente, acusação   |
 | Positivo   | Melhor, beneficiar   |
@@ -58,8 +76,10 @@ Nesta pesquisa, foi utilizado o dicionário econômico de Loughran-McDonald. Nel
 
 Abaixo, constam as análises de sentimento das atas do Copom separadas por presidente do Brasil ou do BCB. Dada a temporalidade semelhante dos mandatos dois tipos de presidentes, a diferença entre os dois gráficos é pequena.
 
+*Análise de sentimento por presidente do Brasil*
 ![Análise de sentimento por presidente do Brasil]({{ "/assets/images/copom_text_analysis/Sentiment_each_BR_pres.png" }})
 
+*Análise de sentimento por presidente do BCB*
 ![Análise de sentimento por presidente do BCB]({{ "/assets/images/copom_text_analysis/Sentiment_each_BCB_pres.png" }})
 
 Algumas primeiras impressões podem ser notadas. Primeiramente, verifica-se um tom mais negativo que positivo das atas do Copom.  Em segundo lugar, percebe-se um aumento do sentimento de incerteza após o primeiro governo Temer, possivelmente relacionado com a recessão e lenta recuperação econômica desde então. Por fim, também é possível notar uma redução do sentimento litigioso após o governo Temer.
@@ -72,11 +92,13 @@ O gráfico abaixo mostra as 20 palavras mais frequentes nos 6 tópicos. Essa eta
 
 No entanto, algumas conclusões inicias podem ser extraídas. Por exemplo, o tópico 2 aparenta tratar da economia real (industria e produção) e crescimento (expansão, cresceu, aumentou, elevou, expandiu). O tópico 5 apresenta uma relação forte com o dólar, preços administrados e a necessidade de ações. O tópico 6 apresenta um cenário de riscos e de ajustes/reformas.
 
+*Palavras por tópico*
 ![Palavras por tópico]({{ "/assets/images/copom_text_analysis/Words_per_topic.png" }})
 
 Partindo desses tópicos, é feita a análise de tópicos por presidências. É possível ver alguns movimentos claros na predominância dos tópicas nas presidências, indicando o estado da economia e do governo. Por exemplo, o tópico 5 preocupado com o dólar, setor externo e os preços administrado é predominante ao final do governo FHC, em que houve uma forte desvalorização cambial e crescimento forte de preços administrado e a crise energética de 2001. O tópico 2 é predominante entre 2004 e 2007, em que a economia cresceu em taxas comparativamente altas. Por fim, o tópico 6 que exprime riscos e reformas é identificado como dominante nos governos Temer e Bolsonaro, em que se aprovaram a Reforma Trabalhista e da Previdência.
 
-![Tópicos por presidente]({{ "Topic_per_BCB_president.png" }})
+*Tópicos por presidente*
+![Tópicos por presidente]({{ "/assets/images/copom_text_analysis/Topic_per_BCB_president.png" }})
 
 # Conclusão
 
